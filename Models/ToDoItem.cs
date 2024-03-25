@@ -6,7 +6,7 @@ public class ToDoItem
 {
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
-    public string Id { get; set; } = Guid.NewGuid().ToString();
+    public string? Id { get; set; }
 
     [BsonElement("Title")]
     public string? Title { get; set; }
